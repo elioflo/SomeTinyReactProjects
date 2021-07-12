@@ -1,5 +1,7 @@
-window.onload = () =>{ 
+window.onload = () =>{
+
     let cronometro = document.getElementById('cronometro')
+    
     let btnIniciar = document.getElementById('iniciar')
     let btnAlto = document.getElementById('alto')
     let btnReiniciar = document.getElementById('reiniciar')
@@ -14,7 +16,7 @@ window.onload = () =>{
             procesoId = window.setInterval(()=>{
                 segundos++
                 cronometro.innerText = `${formato(Math.floor(segundos/60))}:${formato(segundos%60)}`
-            },100)
+            },1000)
         }
     }
 

@@ -8,15 +8,20 @@
     <title>StopWatch</title>
 
     <link rel="stylesheet" href="./index.css">
-    <script src="./index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
+    <script src="./index.js"></script>
 </head>
 
 <body>
-    <div id="cronometro"></div>
-    <button id="iniciar">Iniciar</button>
-    <button id="alto">Alto</button>
-    <button id="reiniciar">Reiniciar</button>
+    <div class="contenedor">
+        <div id="cronometro"></div>
+        <div id="controles">
+            <button id="reiniciar"><i class="ri-refresh-line ri-5x"></i></button>
+            <button id="iniciar"><i class="ri-play-circle-line ri-5x"></i></button>
+            <button id="alto"><i class="ri-stop-circle-line ri-5x"></i></button>
+        </div>
+    </div>
 </body>
 
 </html>
